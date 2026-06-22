@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宝威体育 · 稳定入口与页面说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9fafb;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      color: #1f2937;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+      padding: 2.5rem 2rem;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 1.8rem 1.2rem;
+      }
+    }
+
+    /* hero */
+    .hero {
+      margin-bottom: 2.6rem;
+    }
+
+    .hero__title {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+      color: #111827;
+    }
+
+    .hero__sub {
+      font-size: 1.05rem;
+      color: #4b5563;
+      max-width: 600px;
+      margin-top: 0.3rem;
+      border-left: 3px solid #d1d5db;
+      padding-left: 1rem;
+    }
+
+    /* 普通区块 */
+    .section {
+      margin: 2.2rem 0;
+    }
+
+    .section:first-of-type {
+      margin-top: 0.8rem;
+    }
+
+    .section__title {
+      font-size: 1.25rem;
+      font-weight: 550;
+      margin-bottom: 0.75rem;
+      color: #111827;
+      letter-spacing: -0.01em;
+    }
+
+    .section p {
+      margin-bottom: 0.9rem;
+      color: #374151;
+    }
+
+    /* 优势卡片组 */
+    .grid-adv {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin: 1.4rem 0 1rem;
+    }
+
+    .adv-card {
+      background: #f3f4f6;
+      border-radius: 18px;
+      padding: 1.1rem 1rem;
+      transition: background 0.2s;
+    }
+
+    .adv-card:hover {
+      background: #e5e7eb;
+    }
+
+    .adv-card h3 {
+      font-size: 1rem;
+      font-weight: 570;
+      margin-bottom: 0.25rem;
+      color: #111827;
+    }
+
+    .adv-card p {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 480px) {
+      .grid-adv {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* faq 摘要 */
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.8rem 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 530;
+      margin-bottom: 0.2rem;
+      color: #1f2937;
+    }
+
+    .faq-a {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+
+    /* 底部链接 */
+    .footer-links {
+      margin-top: 2.8rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e7eb;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .footer-links .copy {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .footer-links a {
+      color: #1f2937;
+      text-decoration: none;
+      border-bottom: 1px solid #d1d5db;
+      transition: border-color 0.15s;
+    }
+
+    .footer-links a:hover {
+      border-bottom-color: #1f2937;
+    }
+
+    .inline-link {
+      color: #1f2937;
+      text-decoration: none;
+      border-bottom: 1px solid #d1d5db;
+      transition: border-color 0.15s;
+    }
+
+    .inline-link:hover {
+      border-bottom-color: #111827;
+    }
+
+    /* 提示 / 说明 */
+    .note {
+      background: #f9fafb;
+      border-radius: 18px;
+      padding: 1rem 1.2rem;
+      color: #374151;
+      font-size: 0.95rem;
+      border: 1px solid #e5e7eb;
+      margin: 1.8rem 0 1.2rem;
+    }
+
+    .note strong {
+      color: #111827;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #e5e7eb;
+      margin: 1.8rem 0;
+    }
+
+    a:focus-visible {
+      outline: 2px solid #9ca3af;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- hero 区 -->
+    <div class="hero">
+      <h1 class="hero__title">宝威体育</h1>
+      <div class="hero__sub">
+        一个不绕弯子的稳定入口 · 页面即说明
+      </div>
+    </div>
+
+    <!-- 说明区：从稳定入口切入 -->
+    <div class="section">
+      <p>
+        几年前第一次打开 <a href="https://m-baoweisports.com" class="inline-link">宝威体育</a> 时，页面加载很快，结构也简单。后来慢慢发现，这种干净反而难得——没有弹窗干扰，没有来回跳转，每一次进入都是同一个稳定的界面。对于经常需要快速查阅信息的人来说，少一步等待就是多一分效率。
+      </p>
+      <p>
+        这种稳定性并不来自复杂的技术堆叠，而是一种克制的设计选择：固定域名、轻量页面、一致的布局。之后陆续介绍给几位朋友，大家的反馈几乎相同——“不用重新适应”。我想这大概就是所谓“入口感”吧：你知道门在哪里，门也一直在那里。
+      </p>
+    </div>
+
+    <!-- 优势区：卡片式 -->
+    <div class="section">
+      <h2 class="section__title">几个让人愿意留下的细节</h2>
+      <div class="grid-adv">
+        <div class="adv-card">
+          <h3>一致的路径</h3>
+          <p>m-baoweisports.com 长期未变，可当作固定书签。</p>
+        </div>
+        <div class="adv-card">
+          <h3>克制的信息</h3>
+          <p>没有冗余模块，每个区块都有实际用途。</p>
+        </div>
+        <div class="adv-card">
+          <h3>低负担访问</h3>
+          <p>页面轻量，即使网络一般也能较快打开。</p>
+        </div>
+        <div class="adv-card">
+          <h3>无强干扰</h3>
+          <p>没有强制弹窗或侵入式引导，浏览节奏由你决定。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 说明区延伸：页面为什么这样设计 -->
+    <div class="section">
+      <h2 class="section__title">关于页面本身的说明</h2>
+      <p>
+        这个介绍页之所以保持窄正文宽度与较多留白，是想延续宝威体育一贯的克制调性。标题层级清晰，每个区域都只回答一个简单问题：<em>这里是什么？</em>、<em>它稳定在哪？</em>、<em>我可以怎么使用？</em>。没有动画特效，没有轮播图，甚至没有传统意义上的“行动号召”。因为当页面本身足够清晰时，用户自然知道下一步该做什么——比如直接通过链接过去看看。
+      </p>
+      <p>
+        如果你正在寻找一个不折腾的起点，不妨把 <a href="https://m-baoweisports.com" class="inline-link">宝威体育</a> 放在收藏夹里。它可能不会给你惊喜，但也很少让你失望。
+      </p>
+    </div>
+
+    <!-- 提示 / 场景 -->
+    <div class="note">
+      <strong>一个使用场景</strong><br>
+      周末晚上想快速浏览体育资讯或比分，打开手机浏览器，输入 m-baoweisports.com —— 页面出现，内容直接，没有“先登录”或“关注公众号”的阻隔。这个简单的动作重复几次之后，就会成为习惯。
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section">
+      <h2 class="section__title">常见疑问摘要</h2>
+      <div class="faq-item">
+        <div class="faq-q">这个网站需要注册才能用吗？</div>
+        <div class="faq-a">不需要。直接进入即可浏览大部分内容，部分功能可能基于使用习惯有可选设置。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">手机和电脑访问体验一致吗？</div>
+        <div class="faq-a">页面已针对移动端调整排版，大屏下阅读更宽松，核心内容与路径完全一致。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">域名会经常变动吗？</div>
+        <div class="faq-a">从过往记录来看，m-baoweisports.com 保持长期稳定，可作为固定入口。</div>
+      </div>
+    </div>
+
+    <!-- 底部链接 -->
+    <div class="footer-links">
+      <span class="copy">宝威体育 · 稳定入口说明</span>
+      <span>
+        <a href="https://m-baoweisports.com">宝威体育</a>
+      </span>
+    </div>
+
+  </div>
+</body>
+</html>
